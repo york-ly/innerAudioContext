@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="content">
+
+
+    <view class="artist">
+        <view class="circle" animation="{{animationData}}">
+            <image src="http://p4.music.126.net/o-FjCrUlhyFC96xiVvJZ8g==/109951163111191410.jpg"/>
+        </view>
+    </view>
+
+    <view class="wrap">
+        <text class="startSecond">{{startSecond}}</text>
+        <slider class="drag" step="10" value="{{curTimeVal}}" max="{{duration}}" bindchange="slideBar"
+                catchtouchstart="handSliderStart"  catchtouchend="handSliderEnd"
+                activeColor="#FF1744" block-color="gold" block-size="15"/>
+        <text class="endSecond">{{endSecond}}</text>
+    </view>
+
+    <!--控制按钮-->
+
+
+    <view class="btns">
+
+        <view bindtap='play' class="btn">
+            播放
+        </view>
+
+        <view bindtap='pause' class="btn">
+            暂停
+        </view>
+
+    </view>
+
+</view>

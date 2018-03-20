@@ -1,0 +1,51 @@
+/**index.wxss**/
+.content{
+    min-height: 100%;
+    overflow: hidden;
+}
+.artist{
+    padding-top: 20rpx;
+    text-align: center;
+}
+.artist image{
+    border-radius: 50%;
+    width: 400rpx;
+    height: 400rpx;
+}
+.wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding:8rpx 0rpx;
+    height: 40px;
+    line-height: 40px;
+}
+.startSecond,.endSecond{
+    font-size: 10px;
+}
+.startSecond{
+    margin-left:30rpx;
+}
+.endSecond{
+    margin-right:30rpx;
+}
+.drag{
+    flex:1;
+    backgroundr:#373636;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btn{
+    width: 300rpx;
+    height:100rpx;
+    line-height: 100rpx;
+    background: green;
+    box-shadow: 1px 1px 4px gray;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
